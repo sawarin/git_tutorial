@@ -65,8 +65,8 @@
     →git remote -v</p>
 
 <h2>git fetch <リモート名></h2>
-　<p>リモートリポジトリからローカルリポジトリに情報を取得（フェッチ）する。ワークツリーに反映させるためにはgit mergeが必要<br>
-    →git fetch origin</p>
+　<p>リモートリポジトリからローカルリポジトリに情報を取得（フェッチ）する。ワークツリーに反映されない、するためにはgit mergeが必要<br>
+    →git fetch origin　※ワークツリーに反映するにはgit mergeが必要</p>
 
 <h2>git branch</h2>
 　<p>ブランチの一覧を表示する。リモートでフェッチしたリポジトリも一覧に表示される。<br>
@@ -78,9 +78,9 @@
     →git checkout master</p>
 
 <h2>git merge</h2>
-　<p><br>
+　<p>git fetchで取得したローカルリポジトリの内容をワークツリーに反映する。<br>
     →git merge origin/master</p>
 
-<h2></h2>
-　<p><br>
-    →</p>
+<h2>git pull <リモート名> <ブランチ名></h2>
+　<p>「git fetch」と「git mmerge」が1回で実行できるコマンド。ただし、今いるブランチにmergeされちゃうので注意<br>
+    →git pull origin master</p>
