@@ -30,3 +30,7 @@
     →git rm index.html ※戻すときはgit reset HEAD/ git checkout</p>
   <p>ローカルリポジトリからのみファイルの削除を記録する<br>
     →git rm --cached index.html ※戻すときはgit reset HEADのみ。 ワークツリーには残っているのでcheckoutは不要</p>
+
+<h2>git mv</h2>
+  <p>ファイル名を変更・移動してステージングに記録する。mv→git rm→git addしているのと同じでローカルリポジトリには記録されない<br>
+    →git mv index.html index2.html</p>
